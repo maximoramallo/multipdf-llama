@@ -1,0 +1,16 @@
+# run by
+python3 -m venv .venv
+source .venv/bin/activate
+pip3 install -r requirements.txt
+wget -c https://huggingface.co/TheBloke/TinyLlama-1.1B-Chat-v0.3-GGUF/resolve/main/tinyllama-1.1b-chat-v0.3.Q6_K.gguf
+# run streamlib
+streamlit run multipdf-llama.py
+# visit http://localhost:8501/
+
+# dependencies required by "llama-cpp-python"
+uvicorn
+starlette
+fastapi
+pydantic_settings
+sse_starlette
+starlette_context

@@ -1,0 +1,12 @@
+langchain
+PyPDF2
+streamlit
+qdrant-client
+sentence-transformers
+llama-cpp-python
+uvicorn
+starlette
+fastapi
+pydantic_settings
+sse_starlette
+starlette_context
